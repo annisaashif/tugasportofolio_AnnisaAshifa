@@ -1,0 +1,8 @@
+  .footer {
+    text-align: center; /* Memusatkan teks secara horizontal */
+    padding: 20px;     /* Menambahkan ruang di dalam footer */
+    background-color: #2E2E2E; /* Menambahkan warna latar belakang (opsional) */
+    font-size: 18px;   /* Ukuran font (opsional) */
+    color: #FFCC00;
+  }
+  

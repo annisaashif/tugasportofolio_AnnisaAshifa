@@ -1,0 +1,107 @@
+/* Mengatur tampilan untuk gambar dan text di tengah */
+.home {
+  display: flex; /* Terapkan Flexbox ke elemen utama */
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  align-items: center; /* Memusatkan konten secara vertikal */
+  height: 100vh; /* Agar container memenuhi tinggi layar */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Memusatkan gambar secara horizontal */
+  align-items: center; /* Memusatkan gambar secara vertikal */
+  width: 100%; /* Lebar penuh agar align center berfungsi */
+}
+
+.round-image {
+  width: 200px; /* Ukuran gambar */
+  height: 200px; /* Sama dengan lebar agar proporsional */
+  border-radius: 50%; /* Membuat gambar bulat */
+  object-fit: cover; /* Menjaga proporsi gambar */
+}
+
+/* Kelas tengah (centering untuk elemen lain jika dibutuhkan) */
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+
+/* Tombol gaya */
+a.tbl-biru {
+  background: #3f72af;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-biru:hover {
+  background: #fc5185;
+  text-decoration: none;
+}
+
+a.tbl-pink {
+  background: #fc5185;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a.tbl-pink:hover {
+  background: #3f72af;
+  text-decoration: none;
+}
+
+/* Flexbox untuk section agar responsif */
+section {
+  margin: auto;
+  display: flex;
+  align-items: center; /* Pusatkan vertikal konten di section */
+  justify-content: center; /* Pusatkan horizontal konten di section */
+  margin-bottom: 50px;
+}
+
+p {
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #364f6b;
+}
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+}
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 991.98px) {
+  section {
+    display: block;
+  }
+
+  section img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
